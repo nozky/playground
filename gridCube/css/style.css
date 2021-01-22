@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+
+body {
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube-container {
+  background-color: rgb(17, 13, 7);
+
+  border: 0.2rem solid rgb(34, 23, 23);
+  box-shadow: 1rem 1rem 2rem;
+  margin: 1rem;
+
+  height: 90%;
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-template-areas:
+    "cube-1 cube-1 cube-2"
+    "cube-4 cube-5 cube-2"
+    "cube-4 cube-3 cube-3";
+}
+
+.cube {
+  background-color: cadetblue;
+  border: 1px solid gray;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.cube-1 {
+  grid-area: cube-1;
+  background-image: url("https://picsum.photos/800");
+}
+
+.cube-2 {
+  grid-area: cube-2;
+  background-image: url("https://picsum.photos/700");
+}
+
+.cube-3 {
+  grid-area: cube-3;
+  background-image: url("https://picsum.photos/600");
+}
+
+.cube-4 {
+  grid-area: cube-4;
+  background-image: url("https://picsum.photos/900");
+}
+
+.cube-5 {
+  grid-area: cube-5;
+  background-image: url("https://picsum.photos/500");
+}
+
+blockquote {
+  font-family: "Potta One", cursive;
+  margin: 1rem auto;
+}
+
+footer {
+  padding: 0.2rem 0.2rem;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right,
+.footer-left {
+  font-size: 0.6rem;
+}
