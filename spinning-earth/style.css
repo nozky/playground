@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: clamp(10px, 3vw, 24px);
+}
+
+h2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(131, 128, 128);
+
+  padding: 5rem;
+}
+
+.earth {
+  width: 20rem;
+  height: 20rem;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  /*hideoverlapimage*/
+
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 20px #000 inset,  10px 10px 400px 20px #000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/*just for inner shading */
+.earth:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  box-shadow: -20px -20px 50px 2px #000 inset;
+  border-radius: 50%;
+}
+
+.earth > div {
+  /*make image 2x wider, used for transition*/
+  width: 200%; 
+  height: 100%;
+  
+  animation: spin 10s linear infinite;
+  background:    url(./image/earthmap1k.jpg);
+  background-size: cover;
+  -webkit-animation: spin 10s linear infinite;   
+}
+
+@keyframes spin{
+  0% { background-position-x: 0; } 
+  100% { background-position-x: -600px; }
+}
+

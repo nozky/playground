@@ -26,6 +26,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
 
   grid-template-areas:
+ 
     "cube-1 cube-1 cube-2"
     "cube-4 cube-5 cube-2"
     "cube-4 cube-3 cube-3";
@@ -37,6 +38,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+
 }
 
 .cube-1 {
