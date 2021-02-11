@@ -44,6 +44,7 @@ const getWord = async ()=>{
   gameStart();
 }
 
+
 // display letters and replay elemant with *
 const gameStart = ()=> {
   [...secretWord].map( letter => {
