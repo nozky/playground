@@ -8,4 +8,3 @@ List of all my side Personal Projects, Sample and Design idea.
 
 [Live Demo - Spinning Earth](https://nozky.github.io/playground/spinning-earth/)
 
-[Source Code - HangMan 2021](https://github.com/nozky/playground/tree/master/hangman)
