@@ -1,0 +1,134 @@
+:root{
+  --font-big: clamp(18px, 2vw, 24px);
+  --font-mid: clamp(16px, 2vw, 18ppx);
+  --font-sm: clamp(10px, 2vw, 18px)
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+
+  height: 100vh;
+  width:  100vw;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(113, 129, 129);
+
+}
+
+.wrapper head{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper main{
+ max-height: 100%;
+ width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.wrapper main .img-container{
+  max-width: 50vw;
+  max-height: 40vh;
+}
+
+.wrapper main .img-container img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.wrapper main .words{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.wrapper main .words > h3{
+  border: 1px solid rgb(109, 109, 141);
+  padding: 0.2rem;
+  font-size: var(--font-big);
+}
+
+
+.wrapper main .guess-container{
+  margin-top: 5rem;
+}
+
+.wrapper main .guess-container > *{
+  font-size: var(--font-mid);
+}
+
+.winner{
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: red;
+  font-size: var(--font-big);
+  visibility: hidden;
+}
+
+
+.game-over{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: var(--font-big);
+  color: red;
+
+  display: none;
+}
+
+.push{
+  flex: 1;
+}
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+footer > *{
+  font-size: var(--font-sm);
+}
+
+
+
+
+/* util */
+.show{
+  display: block;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.invisible{
+  visibility: hidden;
+}
