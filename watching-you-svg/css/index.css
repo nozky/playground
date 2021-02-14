@@ -1,0 +1,95 @@
+:root{
+  --eyeball-color: rgb(211, 5, 5);
+}
+
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+}
+
+.svg-container{
+  display: flex;
+  flex-direction: column;
+
+  max-width: 60%;
+  padding: 4rem;
+
+  border-radius: 200px;
+  background-color: rgb(44, 41, 41);
+  box-shadow: 0 0 500px inset;
+}
+
+/* left */
+.svg-container #left-eye-ball{
+  fill: var(--eyeball-color);
+  stroke: red;
+  animation: eye-balls 3s infinite;
+}
+
+.svg-container #left-eyebrow{
+  transform-origin: center right;
+  animation: eyebrow-left 3s infinite;
+}
+
+
+/* right */
+.svg-container #right-eye-ball{
+  fill: var(--eyeball-color);
+  stroke: red;
+  animation: eye-balls 3s infinite;
+}
+
+.svg-container #rigth-eyebrow{
+  transform-origin: center right;
+  animation: eyebrow-rigth 3s infinite;
+}
+
+
+
+/* text */
+h1{
+  font-size: clamp(20px, 3vw, 5vw);
+  color: whitesmoke;
+  text-shadow: 0 0 50px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: whitesmoke;
+}
+
+footer p a{
+  color: whitesmoke;
+}
+
+/* animate */
+@keyframes eye-balls{
+  0% {transform: translateX(-15px);}
+  50% {transform: translateX(15px);}
+  100% {transform: translateX(-15px);}
+}
+
+@keyframes eyebrow-rigth{
+  0%{transform: rotateX(60deg)}
+  50%{transform: rotateX(0deg)}
+  100%{transform: rotateX(60deg)}
+}
+
+@keyframes eyebrow-left{
+  0%{transform: rotateX(0deg)}
+  50%{transform: rotateX(60deg)}
+  100%{transform: rotateX(0deg)}
+}
