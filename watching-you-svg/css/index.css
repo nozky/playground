@@ -30,6 +30,11 @@ body{
   box-shadow: 0 0 500px inset;
 }
 
+.svg-container svg{
+  width: 100%;
+}
+
+
 /* left */
 .svg-container #left-eye-ball{
   fill: var(--eyeball-color);
